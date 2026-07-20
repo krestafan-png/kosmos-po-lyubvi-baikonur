@@ -1271,9 +1271,11 @@
     var hero = slides[i].querySelector('video[data-hero]');
     if (hero){
       hero.loop = false; hero.muted = true;
-      var startHero = function(){ try{ hero.currentTime = 0; }catch(e){} hero.play().catch(function(){}); };
-      if (hero.readyState >= 2) startHero();
-      else hero.addEventListener('loadeddata', startHero, {once:true});
+      try{ hero.currentTime = 0; }catch(e){}
+      var p = hero.play();
+      if (p && p.catch) p.catch(function(){
+        hero.addEventListener('canplay', function onCp(){ hero.removeEventListener('canplay', onCp); hero.play().catch(function(){}); });
+      });
     }
   }
 
