@@ -1,0 +1,7 @@
+# временные файлы ревью и инструментов
+.playwright-mcp/
+check-*.jpeg
+rev*.jpeg
+s[0-9][0-9]*.jpeg
+Thumbs.db
+desktop.ini
