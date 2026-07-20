@@ -407,9 +407,9 @@
   }
   .lb.open{display:flex}
   .lb img,.lb video{
-    max-width:92vw;max-height:88vh;width:auto;height:auto;
-    border-radius:14px;box-shadow:0 24px 70px rgba(0,0,0,.6);
-    user-select:none;-webkit-user-drag:none;background:#04060f;
+    width:92vw;height:86vh;object-fit:contain;
+    border-radius:14px;
+    user-select:none;-webkit-user-drag:none;
   }
   #lbVid{display:none}
   .lb-cap{
@@ -707,16 +707,19 @@
   <div class="wrap">
     <div class="kicker">Отбор</div>
     <h2>Подготовка к полёту</h2>
-    <ul class="points">
-      <li>Более <b>120 экзаменов</b>: каждая неделя - экзамен</li>
-      <li>Прыжок с парашютом: пока летишь и купол не раскрылся, нужно <b>решить задачу</b></li>
-      <li>Вечером дают учебник, утром экзамен, и принимает его <b>автор учебника</b></li>
-      <li>Подготовка в пустыне: <b>2 литра воды на 2 суток</b>, задача - выжить</li>
-      <li>К своему полёту готовился <b>6 лет</b></li>
-      <li>В отряде около 300 человек, летали примерно 130. Многие ждут по 10-18 лет: всё решает медицинское заключение</li>
-    </ul>
-    <div class="gallery" style="max-width:480px">
-      <figure><img src="img/training-crew.jpg" alt="Экипаж в скафандрах на тренировке по выживанию"><figcaption>Тренировки экипажа: скафандры и парашют</figcaption></figure>
+    <div class="split" style="align-items:center;gap:2rem;margin-top:.6rem">
+      <ul class="points">
+        <li>Более <b>120 экзаменов</b>: каждая неделя - экзамен</li>
+        <li>Прыжок с парашютом: пока летишь и купол не раскрылся, нужно <b>решить задачу</b></li>
+        <li>Вечером дают учебник, утром экзамен, и принимает его <b>автор учебника</b></li>
+        <li>Подготовка в пустыне: <b>2 литра воды на 2 суток</b>, задача - выжить</li>
+        <li>К своему полёту готовился <b>6 лет</b></li>
+        <li>В отряде около 300 человек, летали примерно 130. Многие ждут по 10-18 лет: всё решает медицинское заключение</li>
+      </ul>
+      <figure style="margin:0">
+        <img src="img/training-crew.jpg" alt="Экипаж в скафандрах на тренировке по выживанию" style="display:block;width:100%;height:auto;max-height:58vh;object-fit:cover;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 36px rgba(0,0,0,.45)">
+        <figcaption style="color:var(--muted);font-size:.95rem;margin-top:.5rem">Тренировки экипажа: скафандры и парашют</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -730,17 +733,20 @@
   <div class="wrap">
     <div class="kicker">Полёт</div>
     <h2>Старт и невесомость</h2>
-    <ul class="points">
-      <li>Чемоданчики в руках космонавтов: это <b>система охлаждения</b> скафандра, иногда лёд</li>
-      <li>2 часа сидишь в корабле перед полётом. О чём думаешь? <span class="q">«Как же хочется есть!»</span> Завтрак перед стартом лёгкий</li>
-      <li>Перегрузка при взлёте: <b>4-8 g</b></li>
-      <li>Первые дни: <b>адаптация</b>. Никаких упражнений по саморегуляции, просто терпишь</li>
-      <li><b>Невесомость нельзя воспроизвести на Земле</b>, и в космосе всё зависит от организма человека</li>
-      <li>Спят в пристёгнутых спальниках: <b>руки взлетают</b></li>
-      <li>После возвращения: <span class="q">«Какие тяжёлые руки, как я их могу носить»</span>. Гравитация!</li>
-    </ul>
-    <div class="gallery" style="max-width:560px">
-      <figure><img src="img/crew-suitcases.jpg" alt="Экипаж идёт к автобусу с чемоданчиками системы охлаждения"><figcaption>Те самые чемоданчики: система охлаждения скафандра</figcaption></figure>
+    <div class="split" style="align-items:center;gap:2rem;margin-top:.6rem">
+      <ul class="points">
+        <li>Чемоданчики в руках космонавтов: это <b>система охлаждения</b> скафандра, иногда лёд</li>
+        <li>2 часа сидишь в корабле перед полётом. О чём думаешь? <span class="q">«Как же хочется есть!»</span> Завтрак перед стартом лёгкий</li>
+        <li>Перегрузка при взлёте: <b>4-8 g</b></li>
+        <li>Первые дни: <b>адаптация</b>. Никаких упражнений по саморегуляции, просто терпишь</li>
+        <li><b>Невесомость нельзя воспроизвести на Земле</b>, и в космосе всё зависит от организма человека</li>
+        <li>Спят в пристёгнутых спальниках: <b>руки взлетают</b></li>
+        <li>После возвращения: <span class="q">«Какие тяжёлые руки, как я их могу носить»</span>. Гравитация!</li>
+      </ul>
+      <figure style="margin:0">
+        <img src="img/crew-suitcases.jpg" alt="Экипаж идёт к автобусу с чемоданчиками системы охлаждения" style="display:block;width:100%;height:auto;max-height:58vh;object-fit:cover;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 36px rgba(0,0,0,.45)">
+        <figcaption style="color:var(--muted);font-size:.95rem;margin-top:.5rem">Те самые чемоданчики: система охлаждения скафандра</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -751,17 +757,20 @@
   <div class="wrap">
     <div class="kicker">Быт на орбите</div>
     <h2>Обычный день на МКС</h2>
-    <ul class="points">
-      <li>Тюбиков нет: <b>сублимированное питание</b> и консервы</li>
-      <li>Наши меняют <b>творог с орехами</b> на американские стейки</li>
-      <li>Спорт: <b>2 часа ежедневно</b>, инструкции присылают с Земли. Дорожка, силовые: сердце в невесомости ленится</li>
-      <li>Личных вещей: не более <b>1,5 кг</b>. Одноразовое бельё, влажные салфетки вместо душа, сухой шампунь</li>
-      <li><b>40% времени</b>: эксперименты. С Земли присылают радиограммы с пошаговыми действиями</li>
-      <li>Язык на станции: <b>рунглиш</b></li>
-      <li>За сутки на МКС <b>16 раз</b> сменяются день и ночь</li>
-    </ul>
-    <div class="gallery" style="max-width:420px">
-      <figure><img src="img/iss-treadmill.jpg" alt="Космонавт на беговой дорожке в модуле МКС"><figcaption>Дорожка на орбите: бегут пристёгнутыми ремнями</figcaption></figure>
+    <div class="split" style="align-items:center;gap:2rem;margin-top:.6rem">
+      <ul class="points compact">
+        <li>Тюбиков нет: <b>сублимированное питание</b> и консервы</li>
+        <li>Наши меняют <b>творог с орехами</b> на американские стейки</li>
+        <li>Спорт: <b>2 часа ежедневно</b>, инструкции присылают с Земли. Дорожка, силовые: сердце в невесомости ленится</li>
+        <li>Личных вещей: не более <b>1,5 кг</b>. Одноразовое бельё, влажные салфетки вместо душа, сухой шампунь</li>
+        <li><b>40% времени</b>: эксперименты. С Земли присылают радиограммы с пошаговыми действиями</li>
+        <li>Язык на станции: <b>рунглиш</b></li>
+        <li>За сутки на МКС <b>16 раз</b> сменяются день и ночь</li>
+      </ul>
+      <figure style="margin:0">
+        <img src="img/iss-treadmill.jpg" alt="Космонавт на беговой дорожке в модуле МКС" style="display:block;width:100%;height:auto;max-height:58vh;object-fit:cover;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 36px rgba(0,0,0,.45)">
+        <figcaption style="color:var(--muted);font-size:.95rem;margin-top:.5rem">Дорожка на орбите: бегут пристёгнутыми ремнями</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -805,6 +814,22 @@
       <li>Разрушается и уменьшается <b>костная ткань</b>, снижается <b>зрение</b></li>
       <li>Перед полётом космонавтов <b>закрывают, изолируют</b></li>
     </ul>
+  </div>
+</section>
+
+<!-- 19b. Возвращение на Землю -->
+<section class="slide">
+  <div class="fx fx-chute" aria-hidden="true">
+    <span style="left:80%">🪂</span>
+    <span style="left:10%;font-size:1.8rem;animation-delay:-7s">🪂</span>
+  </div>
+  <div class="wrap" style="text-align:center">
+    <div class="kicker">Возвращение</div>
+    <h2>После <em>приземления</em></h2>
+    <p class="sub" style="margin-left:auto;margin-right:auto">Из спускаемого аппарата космонавтов достают и несут на руках: после месяцев невесомости <b style="color:var(--accent)">тяжело даже сидеть</b></p>
+    <div style="margin-top:1.3rem;display:flex;justify-content:center">
+      <iframe src="https://www.youtube.com/embed/ZVBIf3kZTDA" title="Уставшие космонавты после приземления" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:min(100%,900px);aspect-ratio:16/9;max-height:56vh;border-radius:16px;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.5)"></iframe>
+    </div>
   </div>
 </section>
 
@@ -890,7 +915,7 @@
     <div class="gallery">
       <figure><img src="img/buran-bunker.jpg" alt="Зал бункера управления с пультами и мониторами"><figcaption>Командный пункт: бункер управления</figcaption></figure>
       <figure><img src="img/boevoy-raschet.jpg" alt="Стенд «Боевой расчёт» на стене бункера"><figcaption>Боевой расчёт</figcaption></figure>
-      <figure><img src="img/energia-transporter.jpg" alt="Транспортно-установочный агрегат «Энергии»"><figcaption>Система транспортировки: люди внизу для масштаба</figcaption></figure>
+      <figure><video src="img/energia-transporter-video.mp4" controls playsinline preload="metadata" style="display:block;margin:0 auto;height:clamp(120px,21vh,240px);width:auto;max-width:100%;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 36px rgba(0,0,0,.45)"></video><figcaption style="text-align:center">Система транспортировки: моё видео</figcaption></figure>
       <figure><img src="img/energia-pad.jpg" alt="Заброшенный стартовый комплекс «Энергия-Буран»"><figcaption>Стартовый комплекс «Энергии»</figcaption></figure>
       <figure><img src="img/sergey-palych.jpg" alt="Сергей Палыч, инженер строительства «Бурана», в музее у стенда «Энергия»"><figcaption>Сергей Палыч: инженер строительства «Бурана»</figcaption></figure>
     </div>
